@@ -119,10 +119,7 @@ function Navbar() {
   const links = ["Home", "About", "Skills", "Education", "Projects", "Contact"];
   return (
     <nav className={scrolled ? "scrolled" : ""}>
-      <a href="#home" className="logo">
-        <span className="logo-badge">RS</span>
-        <span className="logo-name">Raitig<em>.</em>Sarkar<small>Python · ML Dev</small></span>
-      </a>
+      <a href="#home" className="logo"><span className="logo-badge">RS</span></a>
       <ul className={`nav-links ${open ? "open" : ""}`}>
         {links.map((l) => <li key={l}><a href={`#${l.toLowerCase()}`} onClick={() => setOpen(false)}>{l}</a></li>)}
       </ul>
