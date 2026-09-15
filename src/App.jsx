@@ -17,7 +17,7 @@ const MARQUEE = ["Python","Machine Learning","OpenCV","Pandas","NumPy","Scikit-l
 
 const EDUCATION = [
   { school: "Brainware University", degree: "Bachelor of Computer Applications (BCA)", years: "2023–2027" },
-  { school: "Patiram High School", degree: "Higher Secondary Education (WBCHSE)",years: "2022" },
+  { school: "Patiram High School", degree: "Higher Secondary Education (WBCHSE)", years: "2022" },
   { school: "Patiram High School", degree: "Secondary Education (WBBSE)", years: "2020" },
 ];
 
@@ -35,7 +35,7 @@ const PROJECTS = [
   { icon: "🖐️", title: "AI Hand Gesture Tracking",
     desc: "Real-time hand gesture recognition using computer vision — detects hand landmarks, tracks gestures and enables touchless control.",
     tags: ["OpenCV", "Computer Vision", "Python"],
-    link: "https://github.com/raitig" /* TODO: replace with the repo link */ },
+    link: "https://github.com/raitig" },
   { icon: "🏦", title: "Loan Default Prediction",
     desc: "Predicts loan default risk from historical customer data — EDA, feature engineering and multiple classification models compared for accuracy.",
     tags: ["ML", "Classification", "EDA"],
@@ -70,9 +70,13 @@ const SOCIALS = [
   { name: "X", url: "https://x.com/RaitigSarkar",
     svg: <svg viewBox="0 0 24 24"><path d="M18.9 1.2h3.7l-8.1 9.3L24 22.8h-7.5l-5.9-7.7-6.7 7.7H.2l8.7-9.9L0 1.2h7.7l5.3 7 6-7zm-1.3 19.4h2L6.6 3.3h-2.2z"/></svg> },
   { name: "Instagram", url: "https://www.instagram.com/exotic_raitig",
-    svg: <svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 3.3.1 4.8 1.7 4.9 4.9.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 3.2-1.7 4.8-4.9 4.9-1.2.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-3.3-.1-4.8-1.7-4.9-4.9-.1-1.2-.1-1.6-.1-4.8s0-3.6.1-4.8C2.4 4 4 2.4 7.2 2.3 8.4 2.2 8.8 2.2 12 2.2zm0 3.7a6.1 6.1 0 1 0 0 12.2 6.1 6。1 0 0 0 0-12.2zm0 10.1a4 4 0 1 1 0-8.1 4 4 0 0 1 0 8.1zm6.4-10.5a1.4 1.4 0 1 0-2.9-.1 1.4 1.4 0 0 0 2.9.1z"/></svg> },
-  { name: "Facebook", url: "https://www.facebook.com/raitig.sarkar.3", svg: <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg> },
-  ];      
+    svg: <svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 3.3.1 4.8 1.7 4.9 4.9.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 3.2-1.7 4.8-4.9 4.9-1.2.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-3.3-.1-4.8-1.7-4.9-4.9-.1-1.2-.1-1.6-.1-4.8s0-3.6.1-4.8C2.4 4 4 2.4 7.2 2.3 8.4 2.2 8.8 2.2 12 2.2zm0 3.7a6.1 6.1 0 1 0 0 12.2 6.1 6.1 0 0 0 0-12.2zm0 10a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-10.2a1.4 1.4 0 1 1-2.9 0 1.4 1.4 0 0 1 2.9 0z"/></svg> },
+  { name: "Facebook", url: "https://www.facebook.com/raitig.sarkar.3",
+    svg: <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg> },
+  { name: "Email", url: "mailto:raitigsarkar18@gmail.com",
+    svg: <svg viewBox="0 0 24 24"><path d="M2 4h20a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zm10 8.7L3.4 6v12h17.2V6zM4.7 6l7.3 5.4L19.3 6z"/></svg> },
+];
+
 const RESUME = "/Raitig-Sarkar-Resume.pdf";
 
 /* ---------------- HOOKS ---------------- */
@@ -115,7 +119,10 @@ function Navbar() {
   const links = ["Home", "About", "Skills", "Education", "Projects", "Contact"];
   return (
     <nav className={scrolled ? "scrolled" : ""}>
-      <a href="#home" className="logo">R<span>.</span>S</a>
+      <a href="#home" className="logo">
+        <span className="logo-badge">RS</span>
+        <span className="logo-name">Raitig<em>.</em>Sarkar<small>Python · ML Dev</small></span>
+      </a>
       <ul className={`nav-links ${open ? "open" : ""}`}>
         {links.map((l) => <li key={l}><a href={`#${l.toLowerCase()}`} onClick={() => setOpen(false)}>{l}</a></li>)}
       </ul>
@@ -173,6 +180,7 @@ function About() {
         <Reveal className="stats">
           <div className="stat"><b>8+</b><br /><small>Projects</small></div>
           <div className="stat"><b>3</b><br /><small>Certifications</small></div>
+          <div className="stat"><b>∞</b><br /><small>Curiosity</small></div>
         </Reveal>
       </div>
     </section>
@@ -198,7 +206,6 @@ function Skills() {
 function Education() {
   return (
     <section id="education">
-      <h2 className="section-title"><Reveal>edu</Reveal></h2>
       <h2 className="section-title"><Reveal>Education & <span>Certifications</span></Reveal></h2>
       <div className="timeline">
         {EDUCATION.map((e) => (
